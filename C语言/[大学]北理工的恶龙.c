@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int increase(const void *a,const void *b){
-	int ia=*(int*)a;
+	int ia=*(int*)a;	//把a转化成int* , 再用*解引用获得指针指向的数值
 	int ib=*(int*)b;
 	return ia-ib;
 }
